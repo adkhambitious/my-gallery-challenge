@@ -10,18 +10,16 @@ body {
     width: 1440px;
     height: 1577px;
     flex-direction: column;
-    background-color: aquamarine;
     align-items: center;
 }
 
 .userInfo {
+    width: 350px;
     height: 450px;
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: burlywood;
 }
 
 .numberDescription {
@@ -74,6 +72,7 @@ body {
     display: flex;
     width: 100%;
     height: 50px;
+    padding: 15px;
 } 
 
 .initials {
@@ -81,6 +80,7 @@ body {
     font-size: 24px;
     color: #4E5150;
     text-align: center;
+    margin-top: 8px;
 }
 
 .placeOfBirth {
@@ -90,17 +90,11 @@ body {
     text-align: center;
 }
 
-
-
-
-
-
 .content {
-    height: 1000px;
-    width: 1000px;
+    height: 960px;
+    width: 960px;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .first {
@@ -108,20 +102,21 @@ body {
     height: 360px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .squarePic {
     width: 300px;
     height: 300px;
     border-radius: 20px;
-    margin: 30px;
+    /* margin: 25px; */
 }
 
 .rectanglePic {
     width: 630px;
     height: 300px;
     border-radius: 20px;
-    margin: 30px;
+
 }
 
 .second {
@@ -129,26 +124,63 @@ body {
     width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .group {
-    height: 600px;
-    width: 600px;
+    height: 630px;
+    width: 630px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .subGroup {
-    width: 100%;
+    width: 630px;
     height: 300px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
-.reverseRectanglePic {
+.special {
     width: 300px;
-    height: 660px;
+    height: 630px;
     border-radius: 20px;
-    margin: 30px;
 }
 
+.pic {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+@media(max-width: 767px) {
+    .container {
+        display: flex;
+        width: 767px;
+        height: 2400px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content {
+        max-width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-content: center
+    }
+    .second {
+        height: 1290px;
+        width: 630px;
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+    }
+    
+    .first {
+        width: 660px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+}

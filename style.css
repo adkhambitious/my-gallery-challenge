@@ -18,8 +18,7 @@ body {
     height: 450px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
 }
 
 .numberDescription {
@@ -58,7 +57,7 @@ body {
     justify-content: center;
     align-content: center;
     width: 100%;
-    height: 200px;
+    height: 166px;
 }
 
 .profilePhoto img {
@@ -80,7 +79,7 @@ body {
     font-size: 24px;
     color: #4E5150;
     text-align: center;
-    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 .placeOfBirth {
@@ -97,7 +96,7 @@ body {
     flex-direction: column;
 }
 
-.first {
+.upContent {
     width: 100%;
     height: 360px;
     display: flex;
@@ -119,7 +118,7 @@ body {
 
 }
 
-.second {
+.downContent {
     height: 650px;
     width: 100%;
     display: flex;
@@ -169,7 +168,7 @@ body {
         flex-direction: column;
         align-content: center
     }
-    .second {
+    .downContent {
         height: 1290px;
         width: 630px;
         display: flex;
@@ -177,7 +176,7 @@ body {
         align-content: space-between;
     }
     
-    .first {
+    .upContent {
         width: 660px;
         height: 300px;
         display: flex;

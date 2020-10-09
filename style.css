@@ -108,21 +108,20 @@ body {
     grid-column: span 1;
     grid-row: span 1;
     border-radius: 20px;
+    height: 100%;
 }
 
 .grid-picture--horizontal-doubled-size {
     grid-column: span 2;
-    height: 100%;
 }
 
 .grid-picture--vertical-doubled-size {
     grid-row: span 2;
-    height: 100%;
 }
 
 @media(max-width: 1024px) {
     .grid-topLinePics {
-        gap: 22.5px;
+        gap: 22px;
     }
 }
 
@@ -133,10 +132,10 @@ body {
 }
 @media(max-width: 479px) {
     .grid-topLinePics {
-        gap: 9.375px;
+        gap: 9px;
     }
     .userInfo {
-        width: 233.33px;
+        width: 233px;
         height: 300px;
     }    
     .numberDescription {
@@ -144,34 +143,34 @@ body {
         height: 80px;
     }
     .digitalBlock {
-        width: 66.666px;
-        height: 44.666px;
-        border-radius: 10.666px;
+        width: 66px;
+        height: 44px;
+        border-radius: 10px;
     }
     .numbers {
         font-size: 12px;
-        margin-top: 9.333px;
+        margin-top: 9px;
     }
     .kind {
-        font-size: 9.333px;
-        margin-top: 2.666px;
+        font-size: 9px;
+        margin-top: 2px;
     }
     
     .profilePhoto {
         width: 100%;
-        height: 110.6px;
+        height: 110px;
     }
     .profilePhoto img {
-        border-radius: 33.333px;
+        border-radius: 33px;
         width: 104px;
         height: 104px;
     }
     .initials {
         font-size: 16px;
-        margin-bottom: 5.3px;
+        margin-bottom: 5px;
     }
 
     .placeOfBirth {
-        font-size: 9.333px;
+        font-size: 9px;
     }
 }

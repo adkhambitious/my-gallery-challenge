@@ -120,15 +120,6 @@ body {
     height: 100%;
 }
 
-@keyframes group {
-    0%{
-        left: 0;
-    }
-    100%{
-        
-    }
-}
-
 @media(max-width: 1024px) {
     .grid-topLinePics {
         gap: 22.5px;

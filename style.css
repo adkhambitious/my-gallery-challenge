@@ -33,7 +33,9 @@ body {
 .digitalBlock {
     width: 100px;
     height: 67px;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
     text-align: center;
     background: #E5E5E5;
     border-radius: 16px;
@@ -43,13 +45,14 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     color: #4E5150;
-    margin-top: 12px;
+    margin-top: 14px;
 }
 
 .kind {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     color: #4E5150;
+    margin-top: 4px;
 }
 
 .profilePhoto {
@@ -60,19 +63,12 @@ body {
     height: 166px;
 }
 
-.profilePhoto img {
+.profilePhoto__img {
     display: flex;
     border-radius: 50px;
-    width: 150px;
-    height: 150px;
+    width: 156px;
+    height: 156px;
 }
-
-.personalInfo {
-    display: flex;
-    width: 100%;
-    height: 50px;
-    padding: 15px;
-} 
 
 .initials {
     font-family: 'Montserrat', sans-serif;
@@ -89,97 +85,89 @@ body {
     text-align: center;
 }
 
-.content {
-    height: 960px;
-    width: 960px;
-    display: flex;
-    flex-direction: column;
+.grid-topLinePics {
+    display: grid;
+    width: 95%;
+    max-width: 960px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
 }
 
-.upContent {
+.grid-picture__pic {
     width: 100%;
-    height: 360px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
 }
 
-.squarePic {
-    width: 300px;
-    height: 300px;
+.grid-picture {
+    grid-column: span 1;
+    grid-row: span 1;
     border-radius: 20px;
-    /* margin: 25px; */
+    height: 100%;
 }
 
-.rectanglePic {
-    width: 630px;
-    height: 300px;
-    border-radius: 20px;
-
+.grid-picture--horizontal-doubled-size {
+    grid-column: span 2;
 }
 
-.downContent {
-    height: 650px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.grid-picture--vertical-doubled-size {
+    grid-row: span 2;
 }
 
-.group {
-    height: 630px;
-    width: 630px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.subGroup {
-    width: 630px;
-    height: 300px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.special {
-    width: 300px;
-    height: 630px;
-    border-radius: 20px;
-}
-
-.pic {
-    width: 100%;
-    height: auto;
-    border-radius: 20px;
+@media(max-width: 1024px) {
+    .grid-topLinePics {
+        gap: 22px;
+    }
 }
 
 @media(max-width: 767px) {
-    .container {
-        display: flex;
-        width: 767px;
-        height: 2400px;
-        flex-direction: column;
-        align-items: center;
+    .grid-topLinePics {
+        gap: 15px;
     }
-    .content {
-        max-width: 80%;
-        display: flex;
-        flex-direction: column;
-        align-content: center
+}
+@media(max-width: 479px) {
+    .grid-topLinePics {
+        gap: 9px;
     }
-    .downContent {
-        height: 1290px;
-        width: 630px;
-        display: flex;
-        flex-direction: column;
-        align-content: space-between;
+    .userInfo {
+        width: 233px;
+        height: 300px;
+    }    
+    .numberDescription {
+        width: 100%;
+        height: 80px;
+    }
+    .digitalBlock {
+        width: 66px;
+        height: 44px;
+        border-radius: 10px;
+    }
+    .numbers {
+        font-size: 12px;
+        margin-top: 9px;
+    }
+    .kind {
+        font-size: 9px;
+        margin-top: 2px;
     }
     
-    .upContent {
-        width: 660px;
-        height: 300px;
-        display: flex;
-        flex-direction: column;
+    .profilePhoto {
+        width: 100%;
+        height: 110px;
+    }
+    .profilePhoto__img {
+        border-radius: 33px;
+        width: 104px;
+        height: 104px;
+    }
+    .initials {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .placeOfBirth {
+        font-size: 9px;
     }
 }

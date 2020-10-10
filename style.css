@@ -63,13 +63,12 @@ body {
     height: 166px;
 }
 
-.profilePhoto img {
+.profilePhoto__img {
     display: flex;
     border-radius: 50px;
     width: 156px;
     height: 156px;
 }
-
 
 .initials {
     font-family: 'Montserrat', sans-serif;
@@ -85,8 +84,6 @@ body {
     color: #A9A9A9;
     text-align: center;
 }
-
-/* GRID */
 
 .grid-topLinePics {
     display: grid;
@@ -160,7 +157,7 @@ body {
         width: 100%;
         height: 110px;
     }
-    .profilePhoto img {
+    .profilePhoto__img {
         border-radius: 33px;
         width: 104px;
         height: 104px;
